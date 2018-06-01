@@ -14,8 +14,8 @@ public class Treatment implements java.io.Serializable {
 	private java.lang.String id;
 	@org.kie.api.definition.type.Label("type")
 	private java.lang.String type;
-	@org.kie.api.definition.type.Label("description")
-	private java.lang.String description;
+	@org.kie.api.definition.type.Label(value = "treatmentStartDate")
+	private java.util.Date treatmentStartDate;
 
 	public Treatment() {
 	}
@@ -44,20 +44,20 @@ public class Treatment implements java.io.Serializable {
 		this.type = type;
 	}
 
-	public java.lang.String getDescription() {
-		return this.description;
+	public java.util.Date getTreatmentStartDate() {
+		return this.treatmentStartDate;
 	}
 
-	public void setDescription(java.lang.String description) {
-		this.description = description;
+	public void setTreatmentStartDate(java.util.Date treatmentStartDate) {
+		this.treatmentStartDate = treatmentStartDate;
 	}
 
 	public Treatment(java.lang.String step, java.lang.String id,
-			java.lang.String type, java.lang.String description) {
+			java.lang.String type, java.util.Date treatmentStartDate) {
 		this.step = step;
 		this.id = id;
 		this.type = type;
-		this.description = description;
+		this.treatmentStartDate = treatmentStartDate;
 	}
 
 }
