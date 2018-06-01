@@ -6,12 +6,46 @@ package com.elimu.io.nccn;
 
 public class Stage implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Stage() {
-    }
+	@org.kie.api.definition.type.Label(value = "Tumor")
+	private java.lang.String t;
+	@org.kie.api.definition.type.Label(value = "Metastasis")
+	private java.lang.String m;
+	@org.kie.api.definition.type.Label(value = "Node")
+	private java.lang.String n;
 
+	public Stage() {
+	}
 
+	public java.lang.String getT() {
+		return this.t;
+	}
 
+	public void setT(java.lang.String t) {
+		this.t = t;
+	}
+
+	public java.lang.String getM() {
+		return this.m;
+	}
+
+	public void setM(java.lang.String m) {
+		this.m = m;
+	}
+
+	public java.lang.String getN() {
+		return this.n;
+	}
+
+	public void setN(java.lang.String n) {
+		this.n = n;
+	}
+
+	public Stage(java.lang.String t, java.lang.String m, java.lang.String n) {
+		this.t = t;
+		this.m = m;
+		this.n = n;
+	}
 
 }
