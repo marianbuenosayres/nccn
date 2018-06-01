@@ -8,8 +8,29 @@ rule "nscl-treatment_0"
 		Finding(name == "MediastinalNodeStatus", value == "Absent")
 		Finding(name == "TumorOperability", value == "Operabile")
 	then 
+		TreatmentRecommendation $var0 = new TreatmentRecommendation();
+		$var0.setStep( "Initial" );
+		$var0.setType( "Surgical" );
+		$var0.setId( "1234" );
+		$var0.setDescription( "\"Resection/dissection" );
+		insert( $var0 );
 end
 rule "nscl-treatment_1"
+	when 
+		Disease(type == "NSCL", status == "New-Diagnosis")
+		Stage(t in  ( "cT1a", "cT1b", "cT1c" ), n == "0")
+		Finding(name == "TumorLocation", value == "Peripheral")
+		Finding(name == "MediastinalNodeStatus", value == "Absent")
+		Finding(name == "TumorOperability", value == "Inioperable")
+	then 
+		TreatmentRecommendation $var0 = new TreatmentRecommendation();
+		$var0.setStep( "Initial" );
+		$var0.setType( "Radiation" );
+		$var0.setId( "3420" );
+		$var0.setDescription( "Definitive XRT including SABR" );
+		insert( $var0 );
+end
+rule "nscl-treatment_2"
 	when 
 		Disease(type == "NSCL", status == "New-Diagnosis")
 		Stage(t == "cT3a")
