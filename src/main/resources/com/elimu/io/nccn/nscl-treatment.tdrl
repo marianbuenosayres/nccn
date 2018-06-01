@@ -1,2 +1,8 @@
 package com.elimu.io.nccn;
 
+rule "nscl-treatment_0"
+	when 
+		Disease(type == "NSCL", status == "New-Diagnosis")
+		Stage(t in  ( "cT1a", "cT1b", "cT1c" ))
+then 
+end
