@@ -4,5 +4,14 @@ rule "nscl-treatment_0"
 	when 
 		Disease(type == "NSCL", status == "New-Diagnosis")
 		Stage(t in  ( "cT1a", "cT1b", "cT1c" ), n == "0")
+		Finding(name == "TumorLocation", value == "Peripheral")
+		Finding(name == "MediastinalNodeStatus", value == "Absent")
+		Finding(name == "TumorOperability", value == "Operabile")
+	then 
+end
+rule "nscl-treatment_1"
+	when 
+		Disease(type == "NSCL", status == "New-Diagnosis")
+		Stage(t == "cT3a")
 then 
 end
