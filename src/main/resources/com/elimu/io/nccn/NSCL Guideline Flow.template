@@ -55,7 +55,20 @@
       </window>
     </fact>
   </lhs>
-  <rhs/>
+  <rhs>
+    <assertLogical>
+      <fieldValues>
+        <fieldValue>
+          <field>id</field>
+          <value></value>
+          <nature>0</nature>
+          <type>String</type>
+        </fieldValue>
+      </fieldValues>
+      <factType>TreatmentRecommendation</factType>
+      <isBound>false</isBound>
+    </assertLogical>
+  </rhs>
   <imports>
     <imports/>
   </imports>
