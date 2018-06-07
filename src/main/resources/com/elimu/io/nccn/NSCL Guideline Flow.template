@@ -71,8 +71,9 @@
             <fieldType>String</fieldType>
           </fieldConstraint>
           <fieldConstraint>
+            <value>$q2Str</value>
             <operator>in</operator>
-            <constraintValueType>0</constraintValueType>
+            <constraintValueType>7</constraintValueType>
             <expression>
               <parts/>
               <index>2147483647</index>
@@ -115,6 +116,12 @@
       <string>$q1Id</string>
       <list>
         <string>nscl_q1</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$q2Str</string>
+      <list>
+        <string></string>
       </list>
     </entry>
     <entry>
