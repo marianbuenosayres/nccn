@@ -60,8 +60,8 @@
       <fieldValues>
         <fieldValue>
           <field>id</field>
-          <value></value>
-          <nature>0</nature>
+          <value>$trId</value>
+          <nature>7</nature>
           <type>String</type>
         </fieldValue>
       </fieldValues>
@@ -77,21 +77,35 @@
   <table>
     <entry>
       <string>$q1Id</string>
-      <list/>
+      <list>
+        <string>1</string>
+      </list>
     </entry>
     <entry>
       <string>$q1Str</string>
-      <list/>
+      <list>
+        <string></string>
+      </list>
     </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>1</string>
+      </list>
     </entry>
     <entry>
       <string>$q1Num</string>
-      <list/>
+      <list>
+        <string>3</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$trId</string>
+      <list>
+        <string></string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>1</idCol>
+  <rowsCount>1</rowsCount>
 </rule>
