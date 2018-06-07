@@ -3,7 +3,45 @@
   <modelVersion>1.0</modelVersion>
   <attributes/>
   <metadataList/>
-  <lhs/>
+  <lhs>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>$q1Id</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>QuestionResponse</factType>
+            <fieldName>questionId</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <value>$q1Num</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>QuestionResponse</factType>
+            <fieldName>responseNumber</fieldName>
+            <fieldType>Float</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>QuestionResponse</factType>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+  </lhs>
   <rhs/>
   <imports>
     <imports/>
@@ -12,7 +50,15 @@
   <isNegated>false</isNegated>
   <table>
     <entry>
+      <string>$q1Id</string>
+      <list/>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>$q1Num</string>
       <list/>
     </entry>
   </table>
