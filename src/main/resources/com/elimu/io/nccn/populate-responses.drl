@@ -1,2 +1,10 @@
 package com.elimu.io.nccn;
 
+rule "Populate responses default"
+ruleflow-group "populate-responses"
+when
+ //empty rule as placeholder
+ //meant to have one rule (or table) per question for prefilling
+then
+ //prefilling to happen here editing QuestionResponse objects
+end
