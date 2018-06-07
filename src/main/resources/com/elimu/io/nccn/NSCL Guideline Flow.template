@@ -54,6 +54,30 @@
         <parameters/>
       </window>
     </fact>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>$q2Id</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>QuestionResponse</factType>
+            <fieldName>questionId</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>QuestionResponse</factType>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
   </lhs>
   <rhs>
     <assertLogical>
@@ -103,6 +127,12 @@
       <string>$trId</string>
       <list>
         <string>c</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$q2Id</string>
+      <list>
+        <string></string>
       </list>
     </entry>
   </table>
