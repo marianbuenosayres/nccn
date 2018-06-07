@@ -33,6 +33,19 @@
             <fieldName>responseNumber</fieldName>
             <fieldType>Float</fieldType>
           </fieldConstraint>
+          <fieldConstraint>
+            <value>$q1Str</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>QuestionResponse</factType>
+            <fieldName>responseString</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
         </constraints>
       </constraintList>
       <factType>QuestionResponse</factType>
@@ -51,6 +64,10 @@
   <table>
     <entry>
       <string>$q1Id</string>
+      <list/>
+    </entry>
+    <entry>
+      <string>$q1Str</string>
       <list/>
     </entry>
     <entry>
