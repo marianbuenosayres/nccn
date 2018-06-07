@@ -70,6 +70,18 @@
             <fieldName>questionId</fieldName>
             <fieldType>String</fieldType>
           </fieldConstraint>
+          <fieldConstraint>
+            <operator>in</operator>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>QuestionResponse</factType>
+            <fieldName>responseNumber</fieldName>
+            <fieldType>Float</fieldType>
+          </fieldConstraint>
         </constraints>
       </constraintList>
       <factType>QuestionResponse</factType>
@@ -102,7 +114,7 @@
     <entry>
       <string>$q1Id</string>
       <list>
-        <string>1</string>
+        <string>nscl_q1</string>
       </list>
     </entry>
     <entry>
