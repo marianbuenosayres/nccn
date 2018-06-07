@@ -6,12 +6,59 @@ package com.elimu.io.nccn;
 
 public class QuestionResponse implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public QuestionResponse() {
-    }
+	@org.kie.api.definition.type.Label(value = "Question identifier")
+	private java.lang.String questionId;
+	@org.kie.api.definition.type.Label(value = "Question text")
+	private java.lang.String questionText;
+	@org.kie.api.definition.type.Label(value = "Response String Value")
+	private java.lang.String responseString;
+	@org.kie.api.definition.type.Label(value = "Response Numeric Value")
+	private java.lang.Float responseNumber;
 
+	public QuestionResponse() {
+	}
 
+	public java.lang.String getQuestionId() {
+		return this.questionId;
+	}
 
+	public void setQuestionId(java.lang.String questionId) {
+		this.questionId = questionId;
+	}
+
+	public java.lang.String getQuestionText() {
+		return this.questionText;
+	}
+
+	public void setQuestionText(java.lang.String questionText) {
+		this.questionText = questionText;
+	}
+
+	public java.lang.String getResponseString() {
+		return this.responseString;
+	}
+
+	public void setResponseString(java.lang.String responseString) {
+		this.responseString = responseString;
+	}
+
+	public java.lang.Float getResponseNumber() {
+		return this.responseNumber;
+	}
+
+	public void setResponseNumber(java.lang.Float responseNumber) {
+		this.responseNumber = responseNumber;
+	}
+
+	public QuestionResponse(java.lang.String questionId,
+			java.lang.String questionText, java.lang.String responseString,
+			java.lang.Float responseNumber) {
+		this.questionId = questionId;
+		this.questionText = questionText;
+		this.responseString = responseString;
+		this.responseNumber = responseNumber;
+	}
 
 }
