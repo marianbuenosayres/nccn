@@ -80,8 +80,8 @@
             </expression>
             <parameters/>
             <factType>QuestionResponse</factType>
-            <fieldName>responseNumber</fieldName>
-            <fieldType>Float</fieldType>
+            <fieldName>responseString</fieldName>
+            <fieldType>String</fieldType>
           </fieldConstraint>
         </constraints>
       </constraintList>
@@ -121,7 +121,7 @@
     <entry>
       <string>$q2Str</string>
       <list>
-        <string></string>
+        <string>0</string>
       </list>
     </entry>
     <entry>
