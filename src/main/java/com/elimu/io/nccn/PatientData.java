@@ -6,12 +6,37 @@ package com.elimu.io.nccn;
 
 public class PatientData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public PatientData() {
-    }
+	@org.kie.api.definition.type.Label(value = "Patient ID")
+	private java.lang.String patientId;
+	@org.kie.api.definition.type.Label(value = "Patient responses")
+	private java.util.List<com.elimu.io.nccn.QuestionResponse> responses;
 
+	public PatientData() {
+	}
 
+	public java.lang.String getPatientId() {
+		return this.patientId;
+	}
 
+	public void setPatientId(java.lang.String patientId) {
+		this.patientId = patientId;
+	}
+
+	public java.util.List<com.elimu.io.nccn.QuestionResponse> getResponses() {
+		return this.responses;
+	}
+
+	public void setResponses(
+			java.util.List<com.elimu.io.nccn.QuestionResponse> responses) {
+		this.responses = responses;
+	}
+
+	public PatientData(java.lang.String patientId,
+			java.util.List<com.elimu.io.nccn.QuestionResponse> responses) {
+		this.patientId = patientId;
+		this.responses = responses;
+	}
 
 }
