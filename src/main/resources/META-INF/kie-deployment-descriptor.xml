@@ -12,7 +12,9 @@
     <work-item-handlers/>
     <environment-entries/>
     <configurations/>
-    <required-roles/>
+    <required-roles>
+        <required-role>clinician</required-role>
+    </required-roles>
     <remoteable-classes/>
     <limit-serialization-classes>true</limit-serialization-classes>
 </deployment-descriptor>
